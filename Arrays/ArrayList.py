@@ -9,6 +9,7 @@ class ArrayList:
         self.size = 0
         self.A = self.make_array(self.capacity)
 
+
     def __len__(self):
         """
         Returns the number of elements in the list.
@@ -68,5 +69,11 @@ class ArrayList:
         Makes a new array with the given capacity.
         """
         return (new_capacity * ctypes.py_object)()
+
+    def __repr__(self):
+        """
+        returns the string representation of the array
+        """
+        return f"{self.A[:self.size]}"
 
 
