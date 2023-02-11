@@ -77,3 +77,7 @@ class ArrayList:
         return f"{self.A[:self.size]}"
 
 
+
+
+
+
