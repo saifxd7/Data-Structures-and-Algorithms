@@ -1,0 +1,39 @@
+How to analyze Time Complexity?
+
+Running time depends upon:
+    1. single vs multi processofa-rotate-180
+    2. Read/ Write speed to memory
+    3. 32 bit vs 64 bit
+      |-> We don't bother about this all factors 
+
+    4. Input 
+        |-> rate of growth of time
+
+Example: 
+1.   sum(a, b){
+        return a+b
+    }
+
+    Time taken = 2 -> taking only constant
+    So, TC (Time Complexity) -> Constant Time
+
+2.  sumofList(A, n){
+        total = 0
+        for i=0 to n-1
+            total = total + Ai
+        return total
+    }
+
+    Cost          no. of times
+    1        ->      1
+    2        ->    n + 1
+    2        ->      n
+    1        ->      1
+
+    TSumofList = 1 + 2(n+1) + 2n + 1 
+               = 4n + 4
+               = Cn + C`  -> O(n) -> Linear Time
+
+    TSumofMatrix = an^2 + bn + c -> O(n^2) -> Quadratic time
+
+    
